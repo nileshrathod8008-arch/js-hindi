@@ -37,4 +37,16 @@ const mergedObject = Object.assign({}, object1, object2, object3); // Merging mu
 // console.log(mergedObject); // { 1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine' }
 const mergedObject2 = { ...object1, ...object2, ...object3 }; // Merging multiple objects into one using spread operator
 
-console.log(mergedObject); // { 1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine' }
+// console.log(mergedObject2); // { 1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine' }
+
+
+const course = {
+  title: "JavaScript Basics",
+  duration: "4 weeks",
+  instructor: "John Doe",
+  topics: "data"
+};
+
+const {instructor} = course; // Destructuring assignment to extract the instructor property from the course object
+
+console.log(instructor); // John Doe
