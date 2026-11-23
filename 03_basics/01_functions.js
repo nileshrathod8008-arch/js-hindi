@@ -46,4 +46,35 @@ function loginUserMessage(username){
 }
 
 // console.log(loginUserMessage("Nilesh")); // Calling the function with the argument "Nilesh" and logging the returned message
-console.log(loginUserMessage()); // Calling the function without an argument and logging the returned message
+// console.log(loginUserMessage()); // Calling the function without an argument and logging the returned message
+
+
+function calculateCartPrice(...prices){ // Using rest parameter to accept multiple price arguments
+    return prices
+}
+// console.log(calculateCartPrice(10, 20, 30, 40)); // Calling the function with multiple price arguments and logging the returned total price
+
+const user = {
+    username: "Nilesh",
+    price: 100
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`); // Logging the username and price from the passed object
+}
+// handleObject(user); // Calling the function with the user object as an argument
+
+handleObject({
+    username: "Alice",
+    price: 200 
+
+})
+
+
+const myNewArray = [1, 2, 3, 4, 5];
+
+function returnArray(array){
+    return array; // Returning the passed array
+}
+
+console.log(returnArray(myNewArray)); // Calling the function with the myNewArray and logging the returned array
